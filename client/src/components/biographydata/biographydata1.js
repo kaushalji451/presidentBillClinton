@@ -1,6 +1,6 @@
 
 // Store biography sections data in an array for easier maintenance and scalability
-const  biographydata1 = [
+const biographydata1 = [
   {
     id: "1946",
     title: "1946 — William Jefferson Clinton: A Life Of Service And Global Impact",

@@ -6,23 +6,33 @@ This is a full-stack clone of [https://www.presidentclinton.com](https://www.pre
 
 ## 📌 Table of Contents
 
-- [Demo](#demo)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Folder Structure](#folder-structure)
-- [Setup Instructions](#setup-instructions)
-- [Available Scripts](#available-scripts)
-- [Deployment](#deployment)
-- [Environment Variables](#environment-variables)
-- [API Endpoints](#api-endpoints)
-- [Screenshots](#screenshots)
-- [License](#license)
+- [President Clinton Official Website Clone (MERN Stack)](#president-clinton-official-website-clone-mern-stack)
+  - [📌 Table of Contents](#-table-of-contents)
+  - [🚀 Demo](#-demo)
+  - [✨ Features](#-features)
+  - [🛠️ Tech Stack](#️-tech-stack)
+  - [📁 Folder Structure](#-folder-structure)
+  - [⚙️ Setup Instructions](#️-setup-instructions)
+    - [Prerequisites](#prerequisites)
+    - [1. Clone the repository](#1-clone-the-repository)
+    - [2. Setup Backend (server)](#2-setup-backend-server)
+    - [3. Setup Frontend (client)](#3-setup-frontend-client)
+  - [📜 Available Scripts](#-available-scripts)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+  - [🌐 API Endpoints](#-api-endpoints)
+  - [🖼️ Screenshots](#️-screenshots)
+  - [☁️ Deployment](#️-deployment)
+  - [🔒 Environment Variables](#-environment-variables)
+    - [Backend (`server/.env`)](#backend-serverenv)
+    - [Frontend (`client/.env`)](#frontend-clientenv)
+  - [📜 License](#-license)
 
 ---
 
 ## 🚀 Demo
 
-> Coming Soon — to be deployed on Vercel (frontend) and Render (backend).
+> https://president-bill-clinton.vercel.app/
 
 ---
 
@@ -46,8 +56,8 @@ This is a full-stack clone of [https://www.presidentclinton.com](https://www.pre
 | Frontend   | React, Vite, React Router DOM, Tailwind CSS |
 | Backend    | Node.js, Express.js |
 | Database   | MongoDB with Mongoose |
-| Tools      | Axios, Dotenv, Nodemon, PostCSS, Git |
-| Deployment | Vercel (frontend), Render or Railway (backend), MongoDB Atlas (cloud DB) |
+| Tools      | Axios, Dotenv, Nodemon, PostCSS, Pnpm, Git |
+| Deployment | Vercel (frontend), Render (backend), MongoDB Atlas (cloud DB) |
 
 ---
 
@@ -91,9 +101,9 @@ cd president-clinton-clone
 
 ```bash
 cd server
-npm install
+pnpm install
 cp .env.example .env     # or create your own .env
-npm run dev              # uses nodemon
+node index.js              # uses nodemon
 ```
 
 > Example `.env`:
@@ -106,8 +116,8 @@ MONGO_URI=mongodb://localhost:27017/presidentdb
 
 ```bash
 cd ../client
-npm install
-npm run dev              # starts Vite dev server
+pnpm install
+pnpm run dev              # starts Vite dev server
 ```
 
 > Optional `.env` for frontend:
@@ -131,7 +141,7 @@ VITE_API_BASE_URL=http://localhost:5000
 
 | Command        | Description                   |
 |----------------|-------------------------------|
-| `npm run dev`  | Start server with Nodemon     |
+| `node index.js`  | Start server with Nodemon     |
 | `npm start`    | Start server (no hot reload)  |
 
 ---

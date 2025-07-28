@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const backgroundImage =
   "https://images.presidentclinton.com/15c27fae-efc8-4e67-91f8-60f845a7b3b4";
@@ -16,11 +16,11 @@ export default function News() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-      window.scroll({
-        top: 0,
-        left: 0,
-      });
-    }, []);
+    window.scroll({
+      top: 0,
+      left: 0,
+    });
+  }, []);
 
   const fetchData = async () => {
     try {
@@ -111,14 +111,14 @@ export default function News() {
                         {news.summary}
                       </div>
                       <div className="border-y border-white w-full py-2 ">
-                          <Link
-                            to="#"
-                            className="  text-white font-normal"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Read More
-                          </Link>
+                        <Link
+                          to="#"
+                          className="  text-white font-normal"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Read More
+                        </Link>
                       </div>
                     </div>
                   </motion.div>

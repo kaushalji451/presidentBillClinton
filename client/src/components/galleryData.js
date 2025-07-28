@@ -1,6 +1,6 @@
 
 // Replace with real or API data
-const  galleryData = [
+const galleryData = [
   {
     id: 1,
     title: "Historic Speech",

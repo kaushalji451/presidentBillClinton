@@ -112,86 +112,86 @@ export default function Navbar() {
       {/* Fullscreen Mobile Menu Overlay */}
       {isOpen && (
         <motion.div
-      initial={{ opacity: 0, y: -30 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -30 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      className="fixed inset-0 z-[999] h-[100vh] flex flex-col items-center justify-center px-6 py-8 overflow-hidden"
-    >
-      {/* Background Image */}
-      <img
-        src="https://images.presidentclinton.com/85056c4c-ffdf-4d45-b4cd-7063381c9c9a"
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover object-center -z-10"
-        loading="lazy"
-      />
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -30 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="fixed inset-0 z-[999] h-[100vh] flex flex-col items-center justify-center px-6 py-8 overflow-hidden"
+        >
+          {/* Background Image */}
+          <img
+            src="https://images.presidentclinton.com/85056c4c-ffdf-4d45-b4cd-7063381c9c9a"
+            alt="Background"
+            className="absolute inset-0 w-full h-full object-cover object-center -z-10"
+            loading="lazy"
+          />
 
-      {/* Semi-transparent overlay + blur */}
-      <div className="absolute inset-0 bg-[#091D32]/70 backdrop-blur-sm -z-5" />
+          {/* Semi-transparent overlay + blur */}
+          <div className="absolute inset-0 bg-[#091D32]/70 backdrop-blur-sm -z-5" />
 
-      {/* Close button */}
-      <button
-        aria-label="Close menu"
-        onClick={() => setIsOpen(false)}
-        className="absolute top-6 right-6 text-3xl text-white hover:text-gray-400 transition focus:outline-none z-20"
-      >
-        <IoClose />
-      </button>
-
-      {/* Site Title */}
-      <div className="mb-8 mt-2 text-2xl font-bold uppercase text-white text-center tracking-widest z-20">
-        President Alok Ji
-      </div>
-
-      {/* Search Bar */}
-      <div className="w-full max-w-xs mb-8 z-20">
-        <input
-          type="text"
-          placeholder="Search"
-          className="w-full bg-transparent border-b border-white placeholder-white text-white text-base py-2 focus:outline-none"
-        />
-      </div>
-
-      {/* Navigation Links */}
-      <nav className="flex flex-col space-y-6 text-lg font-medium text-white items-center mb-10 z-20">
-        {[
-          { to: "/biography", label: "Biography" },
-          { to: "/timeline", label: "Timeline" },
-          { to: "/gallery", label: "Gallery" },
-          { to: "/news", label: "News" },
-          { to: "/contact", label: "Contact" },
-        ].map(({ to, label }) => (
-          <Link
-            key={to}
-            to={to}
+          {/* Close button */}
+          <button
+            aria-label="Close menu"
             onClick={() => setIsOpen(false)}
-            className="hover:underline"
+            className="absolute top-6 right-6 text-3xl text-white hover:text-gray-400 transition focus:outline-none z-20"
           >
-            {label}
-          </Link>
-        ))}
-      </nav>
+            <IoClose />
+          </button>
 
-      {/* Social Icons */}
-      <div className="flex space-x-6 text-2xl text-white justify-center z-20">
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-        >
-          <FaTwitter className="hover:text-gray-400" />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <FaInstagram className="hover:text-gray-400" />
-        </a>
-      </div>
-    </motion.div>
+          {/* Site Title */}
+          <div className="mb-8 mt-2 text-2xl font-bold uppercase text-white text-center tracking-widest z-20">
+            President Alok Ji
+          </div>
+
+          {/* Search Bar */}
+          <div className="w-full max-w-xs mb-8 z-20">
+            <input
+              type="text"
+              placeholder="Search"
+              className="w-full bg-transparent border-b border-white placeholder-white text-white text-base py-2 focus:outline-none"
+            />
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex flex-col space-y-6 text-lg font-medium text-white items-center mb-10 z-20">
+            {[
+              { to: "/biography", label: "Biography" },
+              { to: "/timeline", label: "Timeline" },
+              { to: "/gallery", label: "Gallery" },
+              { to: "/news", label: "News" },
+              { to: "/contact", label: "Contact" },
+            ].map(({ to, label }) => (
+              <Link
+                key={to}
+                to={to}
+                onClick={() => setIsOpen(false)}
+                className="hover:underline"
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Social Icons */}
+          <div className="flex space-x-6 text-2xl text-white justify-center z-20">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <FaTwitter className="hover:text-gray-400" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="hover:text-gray-400" />
+            </a>
+          </div>
+        </motion.div>
 
       )}
     </>

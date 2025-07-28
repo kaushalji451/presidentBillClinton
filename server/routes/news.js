@@ -12,12 +12,12 @@ Newsrouter.get('/', async (req, res) => {
   }
 });
 
-Newsrouter.post('/',async (req,res)=>{
+Newsrouter.post('/', async (req, res) => {
   try {
-    const data =  await News.insertMany(newsData);
+    const data = await News.insertMany(newsData);
     console.log("data.saves");
   } catch (error) {
-    console.log("some error",error);
+    console.log("some error", error);
   }
 })
 

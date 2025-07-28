@@ -17,37 +17,36 @@ export default function Contact() {
   let navigate = useNavigate();
 
   useEffect(() => {
-      window.scroll({
-        top: 0,
-        left: 0,
-      });
-    }, []);
+    window.scroll({
+      top: 0,
+      left: 0,
+    });
+  }, []);
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
-  console.log(form);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  let data = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
-    headers: { 'Content-Type': 'application/json' },
-    method: 'POST',
-    body: JSON.stringify(form)
-  });
+    let data = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
+      headers: { 'Content-Type': 'application/json' },
+      method: 'POST',
+      body: JSON.stringify(form)
+    });
 
-  // Optional: handle the response
-  if (data.ok) {
-    // success logic
-    alert("We will contact you soon.");
-    navigate("/");
+    // Optional: handle the response
+    if (data.ok) {
+      // success logic
+      alert("We will contact you soon.");
+      navigate("/");
 
-  } else {
-    // error logic
-    alert("some error occured.");
-  }
-};
+    } else {
+      // error logic
+      alert("some error occured.");
+    }
+  };
 
   return (
     <section

@@ -21,10 +21,10 @@ const main = async () => {
 };
 main();
 
-app.use("/api/news",Newsrouter);
+app.use("/api/news", Newsrouter);
 
 // Contact form handler
-app.use('/api/contact',Contactrouter);
+app.use('/api/contact', Contactrouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

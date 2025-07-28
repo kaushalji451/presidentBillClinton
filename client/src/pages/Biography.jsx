@@ -26,14 +26,14 @@ export default function Biography() {
 
       <section
         className="min-h-screen bg-cover bg-center flex items-stretch justify-start relative"
-       style={{
-  backgroundImage: `linear-gradient(to right, rgba(20,28,36,0.95) 0%, rgba(20,28,36,0.15) 100%), url(https://images.presidentclinton.com/7b39245c-154b-4e0b-94c3-ffe60a3ea7a0)`,
-  fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
-}}
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(20,28,36,0.95) 0%, rgba(20,28,36,0.15) 100%), url(https://images.presidentclinton.com/7b39245c-154b-4e0b-94c3-ffe60a3ea7a0)`,
+          fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
+        }}
       >
         <div className="flex items-start w-full">
           <motion.div
-            className="relative text-white pt-[196px] px-[90px] pb-[80px] max-w-lg md:max-w-xl lg:max-w-2xl"
+            className="relative text-white px-10 pt-[196px] md:px-[90px] md:pb-[80px] max-w-lg md:max-w-xl lg:max-w-2xl"
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
@@ -65,14 +65,14 @@ export default function Biography() {
       <section
         className="min-h-screen bg-cover bg-center flex items-stretch justify-start relative"
         style={{
-  backgroundImage: `linear-gradient(to right, rgba(20,28,36,0.3), rgba(20,28,36,0.6)), url('https://images.presidentclinton.com/ee16393c-300d-4f4d-9afa-1431b7e41475')`,
-  fontFamily: "'EB Garamond', ui-serif, Georgia, serif"
-}}
+          backgroundImage: `linear-gradient(to right, rgba(20,28,36,0.3), rgba(20,28,36,0.6)), url('https://images.presidentclinton.com/ee16393c-300d-4f4d-9afa-1431b7e41475')`,
+          fontFamily: "'EB Garamond', ui-serif, Georgia, serif"
+        }}
 
       >
         <div className="flex items-start w-full">
           <motion.div
-            className="relative text-white pt-[196px] px-[90px] pb-[80px] max-w-lg md:max-w-xl lg:max-w-2xl"
+            className="relative text-white px-10 pt-[196px] md:px-[90px] md:pb-[80px] max-w-lg md:max-w-xl lg:max-w-2xl"
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
@@ -136,14 +136,14 @@ export default function Biography() {
       <section
         className="min-h-screen bg-cover bg-center flex items-stretch justify-start relative"
         style={{
-  backgroundImage: `linear-gradient(to right, #091D32 0%, rgba(9,29,50,0) 100%), url(https://images.presidentclinton.com/c1622856-8176-4f98-8654-4ce47f31a29f)`,
-  fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
-}}
+          backgroundImage: `linear-gradient(to right, #091D32 0%, rgba(9,29,50,0) 100%), url(https://images.presidentclinton.com/c1622856-8176-4f98-8654-4ce47f31a29f)`,
+          fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
+        }}
 
       >
         <div className="flex items-start w-full">
           <motion.div
-            className="relative text-white pt-[196px] px-[90px] pb-[80px] max-w-lg md:max-w-xl lg:max-w-2xl"
+            className="relative text-white px-10 pt-[196px] md:px-[90px] md:pb-[80px] max-w-lg md:max-w-xl lg:max-w-2xl"
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}

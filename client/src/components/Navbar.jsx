@@ -44,10 +44,10 @@ export default function Navbar() {
             </div>
 
             {/* Site Title & Desktop Nav */}
-            <div className="w-full md:w-2/4 flex flex-col items-center justify-center order-1 md:order-2">
+            <div className="w-full md:w-2/4  flex flex-col max-md:flex-row items-center justify-center order-1 md:order-2">
               <Link
                 to="/"
-                className="text-2xl sm:text-3xl font-light leading-tight tracking-wide uppercase block mb-1 md:mb-0"
+                className="text-2xl sm:text-3xl max-md:text-center max-md:w-full font-light leading-tight tracking-wide uppercase block mb-1 md:mb-0"
               >
                 President Alok Ji
               </Link>
@@ -73,6 +73,17 @@ export default function Navbar() {
                   </Link>
                 ))}
               </nav>
+
+              {/* Mobile Menu Button */}
+              <div className="md:w-full flex md:hidden justify-center mt-2 order-4">
+                <button
+                  onClick={() => setIsOpen(true)}
+                  className="text-white text-base underline"
+                  aria-label="Open menu"
+                >
+                  <RxHamburgerMenu />
+                </button>
+              </div>
             </div>
 
             {/* Social Icons - ONLY visible md and above */}
@@ -93,17 +104,6 @@ export default function Navbar() {
               >
                 <FaInstagram className="text-xl hover:text-gray-400 transition" />
               </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="w-full flex md:hidden justify-center mt-2 order-4">
-              <button
-                onClick={() => setIsOpen(true)}
-                className="text-white text-base underline"
-                aria-label="Open menu"
-              >
-                <RxHamburgerMenu />
-              </button>
             </div>
           </div>
         ) : null}

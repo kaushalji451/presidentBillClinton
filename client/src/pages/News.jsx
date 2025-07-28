@@ -73,7 +73,7 @@ export default function News() {
         fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
       }}
     >
-      <div className="w-full bg-[#091D32]/50 rounded-md shadow-xl pt-[100px] py-10 font-serif text-white relative">
+      <div className="w-full bg-[#091D32]/50 rounded-md shadow-xl pt-[120px] md:pt-[200px] py-10 font-serif text-white relative">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
             <h1 className=" text-3xl font-normal mb-10 tracking-wide">

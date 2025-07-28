@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+
+body {
+  font-family: 'EB Garamond', 'ui-serif', Georgia, serif;
+  background-color: #091D32;
+}
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

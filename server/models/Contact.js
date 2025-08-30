@@ -1,12 +1,80 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const ContactSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  email: { type: String, required: true },
-  message: { type: String, required: true },
-  phone: { type: String },
-  subject: { type: String },
-  inquiryType: { type: String },
-}, { timestamps: true });
+const ContactSchema = new Schema({
+    invitationFor: {
+        type: String,
+        required: true,
+    },
+    hostOrganization: {
+        type: String,
+        required: true,
+    },
+    hostWebsite: {
+        type: String,
+        required: true,
+    },
+    organizationDescription: {
+        type: String,
+        required: true,
+    },
+    contactName: {
+        type: String,
+        required: true,
+    },
+    contactEmail: {
+        type: String,
+        required: true,
+    },
+    contactPhone: {
+        type: String,
+        required: true,
+    },
+    eventTitle: {
+        type: String,
+        required: true,
+    },
+    eventDate: {
+        type: String,
+        required: true,
+    },
+    mediaPresence: {
+        type: String,
+        required: true,
+    },
+    eventLocation: {
+        type: String,
+        required: true,
+    },
+    street: {
+        type: String,
+        required: true,
+    },
+    city: {
+        type: String,
+        required: true,
+    },
+    state: {
+        type: String,
+        required: true,
+    },
+    country: {
+        type: String,
+        required: true,
+    },
+    postalCode: {
+        type: String,
+        required: true,
+    },
+    audienceDescription: {
+        type: String,
+        required: true,
+    },
+    eventDescription: {
+        type: String,
+        required: true,
+    },
+});
 
-module.exports = mongoose.model('Contact', ContactSchema);
+
+module.exports = mongoose.model("Contact", ContactSchema);

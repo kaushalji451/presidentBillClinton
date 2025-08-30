@@ -1,30 +1,17 @@
 const express = require('express');
 const Contactrouter = express.Router();
 const Contact = require('../models/Contact');
-const multer = require('multer');
 
-const upload = multer(); // memory storage
-
-Contactrouter.post('/', upload.none(), async (req, res) => {
-  // req.body now contains your form fields
-  const { name, email, message, phone, subject, inquiryType } = req.body;
-
-  console.log('Received contact form submission:', req.body);
-
-  if (!name || !email || !message || !phone || !subject || !inquiryType) {
-    return res.status(400).json({
-      error: 'Name, email, message, phone, subject, and inquiryType are required'
-    });
-  }
-
+Contactrouter.post('/', async (req, res) => {
+  console.log("this is data", req.body);
   try {
-    const contact = new Contact({ name, email, message, phone, subject, inquiryType });
-    await contact.save();
-    console.log('Contact saved successfully');
-    res.status(200).json({ message: 'Contact saved successfully' });
+    let data = new Contact(req.body);
+    console.log("this is data", data);
+    await data.save();
+    res.status(200).json({ message: "data saved successfully" })
   } catch (error) {
-    console.error('Error saving contact:', error);
-    res.status(500).json({ error: error.message });
+    console.log("this is error", error);
+    res.status(400).json({ message: error.message });
   }
 });
 

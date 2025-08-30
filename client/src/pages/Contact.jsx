@@ -44,7 +44,7 @@ const Contact = () => {
           submissionData.append(key, formData[key]);
         });
 
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
           method: 'POST',
           body: submissionData,
         });

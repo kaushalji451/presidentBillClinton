@@ -24,6 +24,7 @@ export default function News() {
 
   const fetchData = async () => {
     try {
+      console.log("Fetching from:", `${import.meta.env.VITE_API_BASE_URL}/api/news`);
       const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/news`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

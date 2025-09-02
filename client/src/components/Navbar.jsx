@@ -55,11 +55,10 @@ export default function Navbar() {
               <nav className="hidden md:flex justify-center gap-8 lg:gap-12 text-md mt-2">
                 {[
                   { to: '/biography', label: 'Biography' },
-                  { to: '/timeline', label: 'Timeline' },
                   { to: '/gallery', label: 'Gallery' },
                   { to: '/news', label: 'News' },
                   { to: '/contact', label: 'Contact' },
-                  { to: '/founder', label: 'Founder' },
+                  { to: '/founder', label: 'Lineage Tree' },
                 ].map(({ to, label }) => (
                   <Link
                     key={to}
@@ -157,11 +156,10 @@ export default function Navbar() {
           <nav className="flex flex-col space-y-6 text-lg font-medium text-white items-center mb-10 z-20">
             {[
               { to: "/biography", label: "Biography" },
-              { to: "/timeline", label: "Timeline" },
               { to: "/gallery", label: "Gallery" },
               { to: "/news", label: "News" },
               { to: "/contact", label: "Contact" },
-              { to: "/founder", label: "Founder" },
+              { to: "/founder", label: "Lineage Tree" },
             ].map(({ to, label }) => (
               <Link
                 key={to}

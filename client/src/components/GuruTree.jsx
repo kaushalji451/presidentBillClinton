@@ -1,4 +1,4 @@
-import React,{ useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import lineageDataRaw from "../Lineage.json";
 
@@ -75,20 +75,19 @@ const LineageTree = () => {
             .attr("transform", `translate(${treeWidth / 2 - root.x}, 50)`);
 
         const IMAGE_RADIUS = 35;
-        const TEXT_PADDING = 20;
 
         // LINK DRAWING ANIMATION
-        const links = svg
+        svg
             .selectAll("path.link")
             .data(root.links())
             .enter()
             .append("path")
             .attr("class", "link")
             .attr("fill", "none")
-            .attr("stroke", "#808080")
+            .attr("stroke", "#ccc") // lighter stroke for dark background
             .attr("stroke-width", 2)
             .attr("d", d => {
-                const sourceY = d.source.y + 80; 
+                const sourceY = d.source.y + 80;
                 return d3.linkVertical()
                     .x(d2 => d2.x)
                     .y(d2 => d2 === d.source ? sourceY : d2.y)(d);
@@ -120,21 +119,19 @@ const LineageTree = () => {
             .duration(500)
             .style("opacity", 1);
 
-      
-            nodes.on("click", function (event, d) {
-                if (d.data.children) {
-                    d.data._children = d.data.children;
-                    d.data.children = null;
-                } else if (d.data._children) {
-                    d.data.children = d.data._children;
-                    d.data._children = null;
-                }
-                setRootData({ ...rootData });
-            });
-        
+        nodes.on("click", function (event, d) {
+            if (d.data.children) {
+                d.data._children = d.data.children;
+                d.data.children = null;
+            } else if (d.data._children) {
+                d.data.children = d.data._children;
+                d.data._children = null;
+            }
+            setRootData({ ...rootData });
+        });
 
         nodes.append("circle")
-            .attr("r", 35)
+            .attr("r", IMAGE_RADIUS)
             .attr("fill", "#f0f0f0")
             .attr("stroke", "#aaa");
 
@@ -146,9 +143,9 @@ const LineageTree = () => {
             .attr("y", -35)
             .attr("clip-path", "circle(35px at 35px 35px)");
 
-            nodes.append("text")
+        nodes.append("text")
             .attr("text-anchor", "middle")
-            .attr("fill", "#3f0808")
+            .attr("fill", "#fff") // white text for dark background
             .style("font-size", "14px")
             .style("font-weight", "bold")
             .each(function (d) {
@@ -156,30 +153,30 @@ const LineageTree = () => {
                 const match = fullName.match(/^([^(]+)\s*(\([^)]+\))?/);
                 const nameLine = match ? match[1].trim() : fullName;
                 const bracketLine = match && match[2] ? match[2].trim() : null;
-        
+
                 const text = d3.select(this);
                 text.append("tspan")
                     .attr("x", 0)
                     .attr("y", 55)
                     .text(nameLine);
-        
+
                 if (bracketLine) {
                     text.append("tspan")
                         .attr("x", 0)
                         .attr("dy", "1.2em")
                         .text(bracketLine);
                 }
-            });        
+            });
     }, [dimensions, rootData]);
 
     return (
         <div
             ref={containerRef}
             style={{
-                overflowX: "scroll",
+                overflowX: "hidden",
                 width: "120%",
                 overflowY: "hidden",
-                background: "#fffff0",
+                background: "#091D32", // solid bg as you asked
                 borderRadius: "0.5rem",
                 boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
             }}

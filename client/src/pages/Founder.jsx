@@ -9,7 +9,7 @@ export default function Founder() {
     <GuruTree />
   </div>
   
-    <div className="bg-custom-ivory text-custom-yellow text-white  py-10 px-5">
+    <div className="bg-custom-ivory text-custom-yellow  text-white  py-10 px-5">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold mb-8">Chairperson</h1>
         <h2 className="text-2xl font-bold py-2">Shri Alok Anand Tripathi</h2>

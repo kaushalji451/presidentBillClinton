@@ -59,6 +59,7 @@ export default function Navbar() {
                   { to: '/gallery', label: 'Gallery' },
                   { to: '/news', label: 'News' },
                   { to: '/contact', label: 'Contact' },
+                  { to: '/founder', label: 'Founder' },
                 ].map(({ to, label }) => (
                   <Link
                     key={to}
@@ -160,6 +161,7 @@ export default function Navbar() {
               { to: "/gallery", label: "Gallery" },
               { to: "/news", label: "News" },
               { to: "/contact", label: "Contact" },
+              { to: "/founder", label: "Founder" },
             ].map(({ to, label }) => (
               <Link
                 key={to}

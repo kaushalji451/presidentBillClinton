@@ -8,6 +8,7 @@ import News from './pages/News';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Layout from './components/Layout';
+import Founder from "./pages/Founder"
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
       <Route path="/news" element={<Layout><News /></Layout>} />
       <Route path="/contact" element={<Layout><Contact /></Layout>} />
+      <Route path="/founder" element={<Layout><Founder /></Layout>} />
       <Route path="*" element={<Layout><NotFound /></Layout>} />
     </Routes>
   );

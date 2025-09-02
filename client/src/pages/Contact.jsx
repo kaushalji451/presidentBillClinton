@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import US_STATES from '../components/state';
+import INDIA_STATES from '../components/state';
 const SchedulingForm = () => {
   const [formData, setFormData] = useState({
     invitationFor: '',
@@ -16,7 +16,7 @@ const SchedulingForm = () => {
     street: '',
     city: '',
     state: '',
-    country: 'United States',
+    country: 'India',
     postalCode: '',
     audienceDescription: '',
     eventDescription: '',
@@ -375,7 +375,7 @@ const SchedulingForm = () => {
                       className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${errors.state ? 'border-red-500' : 'border-gray-300'
                         }`}
                     >
-                      {US_STATES.map((state) => (
+                      {INDIA_STATES.map((state) => (
                         <option key={state.value} value={state.value}>
                           {state.label}
                         </option>
@@ -395,11 +395,7 @@ const SchedulingForm = () => {
                       onChange={handleChange}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     >
-                      <option value="United States">United States</option>
-                      <option value="Canada">Canada</option>
-                      <option value="United Kingdom">United Kingdom</option>
-                      <option value="Australia">Australia</option>
-                      <option value="Other">Other</option>
+                      <option value="United States">India</option>
                     </select>
                   </div>
                 </div>

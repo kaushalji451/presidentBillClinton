@@ -135,7 +135,7 @@ const SchedulingForm = () => {
               Contact Us
             </h1>
             <p className="mt-4 text-lg text-gray-50">
-              Please fill out this form to contact President Obama  or Hillary Clinton to appear or speak at your event.
+              Please fill out this form to contact Alok A Tripathi to appear or speak at your event.
             </p>
           </div>
 
@@ -164,7 +164,7 @@ const SchedulingForm = () => {
                       }`}
                   >
                     <option value="">- Select -</option>
-                    <option value="President Alok">President Alok Ji</option>
+                    <option value="Alok A Tripathi">Alok A Tripathi</option>
                   </select>
                   {errors.invitationFor && <p className="mt-1 text-sm text-red-600">{errors.invitationFor}</p>}
                 </div>

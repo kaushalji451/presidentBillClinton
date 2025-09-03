@@ -9,11 +9,11 @@ const Footer = () => (
       {/* LEFT SIDE */}
       <div className="w-full md:w-auto">
         <div className="text-xl md:text-2xl tracking-wide uppercase">
-          President Alok Ji
+          Alok A Tripathi
 
         </div>
         <div className="text-xs mt-1">
-          © {new Date().getFullYear()} President Alok Ji. All rights reserved.
+          © {new Date().getFullYear()} Alok A Tripathi. All rights reserved.
         </div>
       </div>
 

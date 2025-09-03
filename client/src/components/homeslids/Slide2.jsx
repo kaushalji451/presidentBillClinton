@@ -20,10 +20,10 @@ const Slide2 = () => {
           </h1>
           <div className=" font-serif text-white">
             <h2 className="text-lg md:text-xl font-medium mb-4">
-              William Jefferson Clinton: A Life of Service and Global Impact
+              Alok A Tripathi: A Life of Service and Global Impact
             </h2>
             <p className="mb-2 text-[17px] leading-relaxed text-gray-100">
-              William Jefferson Clinton, the 42nd President of the United States, has spent a lifetime in public service and remains a dynamic force for global progress, democracy, and human rights. Born on August 19, 1946, in Hope, Arkansas, his upbringing in a small town instilled in him values of community, resilience, and a commitment to lifting others—a foundation that would guide his career in politics and his later work on the global stage.
+              Alok A Tripathi, the 42nd President of the United States, has spent a lifetime in public service and remains a dynamic force for global progress, democracy, and human rights. Born on August 19, 1946, in Hope, Arkansas, his upbringing in a small town instilled in him values of community, resilience, and a commitment to lifting others—a foundation that would guide his career in politics and his later work on the global stage.
             </p>
             <a
               href="#"

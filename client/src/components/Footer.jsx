@@ -9,10 +9,11 @@ const Footer = () => (
       {/* LEFT SIDE */}
       <div className="w-full md:w-auto">
         <div className="text-xl md:text-2xl tracking-wide uppercase">
-          PRESIDENT BILL CLINTON
+          President Alok Ji
+
         </div>
         <div className="text-xs mt-1">
-          © {new Date().getFullYear()} Bill Clinton. All rights reserved.
+          © {new Date().getFullYear()} President Alok Ji. All rights reserved.
         </div>
       </div>
 
@@ -40,10 +41,10 @@ const Footer = () => (
         {/* NAVIGATION */}
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm md:text-base font-light whitespace-nowrap mb-2 md:mb-0">
           <Link to="/biography" className="hover:underline">Biography</Link>
-          <Link to="/timeline" className="hover:underline">Timeline</Link>
           <Link to="/gallery" className="hover:underline">Gallery</Link>
           <Link to="/news" className="hover:underline">Latest News</Link>
           <Link to="/contact" className="hover:underline">Contact</Link>
+          <Link to="/founder" className="hover:underline">Lineage Tree</Link>
         </nav>
       </div>
     </div>

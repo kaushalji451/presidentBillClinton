@@ -24,7 +24,6 @@ export default function News() {
 
   const fetchData = async () => {
     try {
-      console.log("Fetching from:", `${import.meta.env.VITE_API_BASE_URL}/api/news`);
       const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/news`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -78,7 +77,8 @@ export default function News() {
         <div className="max-w-7xl mx-auto px-4">
           <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
             <h1 className=" text-3xl font-normal mb-10 tracking-wide">
-              President Bill Clinton News
+              President Alok Ji
+ News
             </h1>
 
             {newsData.length === 0 ? (

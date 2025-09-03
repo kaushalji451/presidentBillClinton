@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import INDIA_STATES from '../components/state';
+import INDIA_STATES from '../components/IndiaState';
+import US_STATES from "../components/UsState";
+import CHINA_STATE from '../components/ChinaState';
+import GERMANY_STATES from "../components/GermonyState";
+import JAPAN_PREFECTURES from '../components/japanState';
 const SchedulingForm = () => {
   const [formData, setFormData] = useState({
     invitationFor: '',
@@ -68,7 +72,6 @@ const SchedulingForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
 
       try {
         let data = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
@@ -79,7 +82,7 @@ const SchedulingForm = () => {
           body: JSON.stringify(formData),
         });
         data = await data.json();
-        if (data.status === 200) {
+        if (data.message ==='data saved successfully') {
           setFormData({
             invitationFor: '',
             hostOrganization: '',
@@ -100,19 +103,27 @@ const SchedulingForm = () => {
             audienceDescription: '',
             eventDescription: '',
           });
-          window.scroll({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-          })
         }
         setIsSubmitted(true);
       } catch (error) {
         alert(error.message);
       }
+       window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          })
       // Reset logic can be added here if needed
     }
   };
+
+  const [Country, setCountry] = useState("");
+  useEffect(() => {
+    if (formData.country != "") {
+      setCountry(formData.country);
+    }
+  }, [formData]);
+
 
   return (
     <>
@@ -153,9 +164,7 @@ const SchedulingForm = () => {
                       }`}
                   >
                     <option value="">- Select -</option>
-                    <option value="President Obama">Bill Clinton</option>
-                    <option value="Michelle Obama">Hillary Clinton</option>
-                    <option value="Both">Both</option>
+                    <option value="President Alok">President Alok Ji</option>
                   </select>
                   {errors.invitationFor && <p className="mt-1 text-sm text-red-600">{errors.invitationFor}</p>}
                 </div>
@@ -292,7 +301,6 @@ const SchedulingForm = () => {
                     />
                     {errors.eventDate && <p className="mt-1 text-sm text-red-600">{errors.eventDate}</p>}
                   </div>
-
                   <div>
                     <label htmlFor="mediaPresence" className="block text-sm font-medium text-gray-700 mb-1">
                       Will media be present? *
@@ -348,6 +356,61 @@ const SchedulingForm = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                   <div>
+                    <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-1">
+                      Country *
+                    </label>
+                    <select
+                      id="country"
+                      name="country"
+                      value={formData.country}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      <option value="India">India</option>
+                      <option value="United States">United States</option>
+                      <option value="China">China</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Japan">Japan</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="state" className="block text-sm font-medium text-gray-700 mb-1">
+                      State *
+                    </label>
+                    <select
+                      id="state"
+                      name="state"
+                      value={formData.state}
+                      onChange={handleChange}
+                      className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${errors.state ? 'border-red-500' : 'border-gray-300'
+                        }`}
+                    >
+                      {Country == "India" && INDIA_STATES.map((state) => (
+                        <option key={state.value} value={state.value}>
+                          {state.label}
+                        </option>
+                      )) || Country == "United States" && US_STATES.map((state) => (
+                        <option key={state.value} value={state.value}>
+                          {state.label}
+                        </option>
+                      )) || Country == "China" && CHINA_STATE.map((state) => (
+                        <option key={state.value} value={state.value}>
+                          {state.label}
+                        </option>
+                      )) || Country == "Germany" && GERMANY_STATES.map((state) => (
+                        <option key={state.value} value={state.value}>
+                          {state.label}
+                        </option>
+                      )) || Country == "Japan" && JAPAN_PREFECTURES.map((state) => (
+                        <option key={state.value} value={state.value}>
+                          {state.label}
+                        </option>
+                      ))}
+
+                    </select>
+                    {errors.state && <p className="mt-1 text-sm text-red-600">{errors.state}</p>}
+                  </div>
+                  <div>
                     <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-1">
                       City *
                     </label>
@@ -361,42 +424,6 @@ const SchedulingForm = () => {
                         }`}
                     />
                     {errors.city && <p className="mt-1 text-sm text-red-600">{errors.city}</p>}
-                  </div>
-
-                  <div>
-                    <label htmlFor="state" className="block text-sm font-medium text-gray-700 mb-1">
-                      State *
-                    </label>
-                    <select
-                      id="state"
-                      name="state"
-                      value={formData.state}
-                      onChange={handleChange}
-                      className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ${errors.state ? 'border-red-500' : 'border-gray-300'
-                        }`}
-                    >
-                      {INDIA_STATES.map((state) => (
-                        <option key={state.value} value={state.value}>
-                          {state.label}
-                        </option>
-                      ))}
-                    </select>
-                    {errors.state && <p className="mt-1 text-sm text-red-600">{errors.state}</p>}
-                  </div>
-
-                  <div>
-                    <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-1">
-                      Country *
-                    </label>
-                    <select
-                      id="country"
-                      name="country"
-                      value={formData.country}
-                      onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                    >
-                      <option value="United States">India</option>
-                    </select>
                   </div>
                 </div>
 

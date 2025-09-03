@@ -88,7 +88,8 @@ export default function Biography() {
 
               <div className="mb-7">
                 <h3 className="italic text-base md:text-lg pb-5 ps-6 border-b border-white">
-                  1992 — President Bill Clinton
+                  1992 — President Alok Ji
+
                 </h3>
                 <p className="text-md leading-relaxed pt-5 ps-5">
                   On January 20, 1993, Clinton took office as the 42nd President of

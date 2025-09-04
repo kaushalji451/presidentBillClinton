@@ -1,229 +1,158 @@
 {
-    "name": "Shiv Balak Tiwari",
-    "image": "/images/krishna.jpg",
-    "details":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-    "sub": [
+  "name": "Shiv Balak Tiwari",
+  "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  "sub": [
+    {
+      "name": "Pt Raghubar Dayal Tiwari",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "sub": [
         {
-            "name": "Pt Raghubar Dayal Tiwari",
-            "details":
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-            "image": "/images/follower.jpg",
-            "sub": [
-                {
-                    "name": "Shivshankar Tiwari",
-                    "details":
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                    "image": "/images/guru.jpg"
-                },
-                {
-                    "name": "Devshankar Tiwari",
-                    "details":
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                    "image": "/images/guru.jpg"
-                },
-                {
-                    "name": "Pt. Dev Narayan Tiwari",
-                    "details":
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                    "image": "/images/guru.jpg",
-                    "sub": [
-                        {
-                            "name": "Bhavani Shankar Tiwari (Gajraj )",
-                            "details":
-                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                            "image": "/images/guru.jpg",
-                            "sub": [
-                                {
-                                    "name": "Ramashankar Tiwari (Gama)",
-                                    "details":
-                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                                    "image": "/images/guru.jpg",
-                                    "sub": [
-                                        {
-                                            "name": "Kailashnath Tiwari",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                                            "image": "/images/guru.jpg"
-
-                                        },
-                                        {
-                                            "name": "Anand Kumar Tripathi",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                                            "image": "/images/guru.jpg",
-                                            "sub": [
-                                                {
-                                                    "name": "Pt Alok Anand Tripathi",
-                                                    "details":
-                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                                                    "image": "/images/guru.jpg"
-                                                },
-                                                {
-                                                    "name": "Saurabh Tripathi",
-                                                    "details":
-                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                                                    "image": "/images/guru.jpg"
-                                                }
-                                            ]
-                                        }
-                                        
-                                    ]
-                                },
-                                {
-                                    "name": "Devi Prasad Tiwari",
-                                    "details":
-                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?.",
-                                    "image": "/images/guru.jpg"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                
-                {
-                    "name": "Roopnarayan Tiwari",
-                    "details":
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                    "image": "/images/guru.jpg"
-                }
-            ]
+          "name": "Shivshankar Tiwari",
+          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
         },
         {
-            "name": "Shrimati Rukmani Devi",
-            "details":
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-            "image": "/images/follower.jpg"
+          "name": "Devshankar Tiwari",
+          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
         },
         {
-            "name": "Pt Vishweshwar Dayal Tiwari",
-            "details":
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-            "image": "/images/follower.jpg",
-            "sub": [
+          "name": "Pt. Dev Narayan Tiwari",
+          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+          "sub": [
+            {
+              "name": "Bhavani Shankar Tiwari (Gajraj )",
+              "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+              "sub": [
                 {
-                    "name": "Bhagwan Prasad Tiwari",
-                    "details":
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                    "image": "/images/guru.jpg",
-                    "sub": [
+                  "name": "Ramashankar Tiwari (Gama)",
+                  "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                  "sub": [
+                    {
+                      "name": "Kailashnath Tiwari",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                    },
+                    {
+                      "name": "Anand Kumar Tripathi",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                      "sub": [
                         {
-                            "name": "Mahant Uma Shankar Tiwari",
-                            "details":
-                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                            "image": "/images/guru.jpg",
-                            "sub": [
-                                {
-                                    "name": "Mahant Laxmi Shanker Tiwari",
-                                    "details":
-                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                    "image": "/images/guru.jpg",
-                                    "sub": [
-                                        {
-                                            "name": "Krishna Shankar Tripathi",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                            "image": "/images/guru.jpg"
-                                        },
-                                        
-                                        {
-                                            "name": "Vidya Bhushan Tripathi (Munnar)",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                            "image": "/images/guru.jpg"
-                                        },
-                                        {
-                                            "name": "Shiv Bhushan Tripathi (Sundar)",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                            "image": "/images/guru.jpg",
-                                            "sub": [
-                                                {
-                                                    "name": "Pt. Shashi Bhushan Tripathi(Guddu Maharaj)",
-                                                    "details":
-                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                                    "image": "/images/guru.jpg"
-                                                },
-                                                {
-                                                    "name": "Ravi Bhushan Tripathi",
-                                                    "details":
-                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                                    "image": "/images/guru.jpg"
-                                                },
-                                                {
-                                                    "name": "Rajesh Bhushan Tripathi",
-                                                    "details":
-                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                                    "image": "/images/guru.jpg"
-                                                },
-                                                {
-                                                    "name": "Rakesh Bhushan Tripathi (Bhanu Maharaj)",
-                                                    "details":
-                                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                                    "image": "/images/guru.jpg"
-                                                }
-                                            ]
-                                        }
-
-                                    ]
-                                }
-
-                            ]
+                          "name": "Pt Alok Anand Tripathi",
+                          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                        },
+                        {
+                          "name": "Saurabh Tripathi",
+                          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
                         }
-
-                    ]
+                      ]
+                    }
+                  ]
                 },
                 {
-                    "name": "Bhanuprasad Tiwari",
-                    "details":
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                    "image": "/images/guru.jpg",
-                    "sub": [
-                        {
-                            "name": "Mahant Mahabir Prasad Tiwari",
-                            "details":
-                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                            "image": "/images/guru.jpg",
-                            "sub": [
-                                {
-                                    "name": "Mahant kailashpati Tripathi",
-                                    "details":
-                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                    "image": "/images/guru.jpg",
-                                    "sub": [
-                                        {
-                                            "name": "Mahant Kulapthi Tripathi",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                            "image": "/images/guru.jpg"
-                                        },
-                                        {
-                                            "name": "Mahant Vachaspati Tripathi",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                            "image": "/images/guru.jpg"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Pashupati Tripathi",
-                                    "details":
-                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                    "image": "/images/guru.jpg",
-                                    "sub": [
-                                        {
-                                            "name": "Lokpati Tripathi",
-                                            "details":
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit eum atque nemo distinctio! Eveniet ut sapiente amet temporibus molestiae omnis soluta at odit quisquam cum harum rem reprehenderit, veniam cumque officia dicta exercitationem hic tempora. Magnam, beatae! Quia tempore consectetur harum, repudiandae cumque veniam?",
-                                            "image": "/images/guru.jpg"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                  "name": "Devi Prasad Tiwari",
+                  "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
                 }
-            ]
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Roopnarayan Tiwari",
+          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
         }
-    ]
+      ]
+    },
+    {
+      "name": "Shrimati Rukmani Devi",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+    },
+    {
+      "name": "Pt Vishweshwar Dayal Tiwari",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+      "sub": [
+        {
+          "name": "Bhagwan Prasad Tiwari",
+          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+          "sub": [
+            {
+              "name": "Uma Shankar Tiwari",
+              "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+              "sub": [
+                {
+                  "name": "Laxmi Shanker Tiwari",
+                  "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                  "sub": [
+                    {
+                      "name": "Krishna Shankar Tripathi",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                    },
+                    {
+                      "name": "Vidya Bhushan Tripathi (Munnar)",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                    },
+                    {
+                      "name": "Shiv Bhushan Tripathi (Sundar)",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                      "sub": [
+                        {
+                          "name": "Pt. Shashi Bhushan Tripathi (Guddu Maharaj)",
+                          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Bhavani Shankar Tiwari",
+              "details": "New lineage branch",
+              "sub": [
+                {
+                  "name": "Ramashankar Tiwari",
+                  "details": "Child of Bhavani Shankar Tiwari"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bhanuprasad Tiwari",
+          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+          "sub": [
+            {
+              "name": "Mahabir Prasad Tiwari",
+              "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+              "sub": [
+                {
+                  "name": "kailashpati Tripathi",
+                  "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                  "sub": [
+                    {
+                      "name": "Kulpthi Tripathi",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                      "sub": [
+                        {
+                          "name": "Vachaspati Tripathi",
+                          "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Pashupati Tripathi",
+                  "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+                  "sub": [
+                    {
+                      "name": "Lokpati Tripathi",
+                      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

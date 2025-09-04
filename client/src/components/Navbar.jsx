@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaTwitter, FaInstagram } from 'react-icons/fa';
+import {FaInstagram } from 'react-icons/fa';
+import { FaXTwitter  } from "react-icons/fa6";
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from "framer-motion";
@@ -94,7 +95,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 aria-label="Twitter"
               >
-                <FaTwitter className="text-xl hover:text-gray-400 transition" />
+                <FaXTwitter  className="text-xl hover:text-gray-400 transition" />
               </a>
               <a
                 href="https://instagram.com"

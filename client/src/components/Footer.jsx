@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer = () => (
@@ -21,13 +21,14 @@ const Footer = () => (
       <div className="w-full md:w-auto flex flex-col-reverse md:flex-row justify-between md:justify-end items-start md:items-center gap-4 md:gap-5">
         {/* SOCIAL BUTTONS */}
         <div className="flex gap-3">
-          <button
-            aria-label="Close"
+          <Link
+            to="https://twitter.com/"
+            aria-label="twitter"
             className="text-gray-400 hover:text-white transition"
             tabIndex={0}
           >
-            <IoClose size={20} />
-          </button>
+            <FaXTwitter  size={20} />
+          </Link>
           <Link
             to="https://instagram.com/"
             target="_blank"

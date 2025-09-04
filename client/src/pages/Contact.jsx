@@ -153,7 +153,7 @@ const SchedulingForm = () => {
                 {/* Invitation For */}
                 <div className="mb-6">
                   <label htmlFor="invitationFor" className="block text-sm font-medium text-gray-700 mb-1">
-                    Invitation for *
+                    Inviting for :
                   </label>
                   <select
                     id="invitationFor"
@@ -164,7 +164,10 @@ const SchedulingForm = () => {
                       }`}
                   >
                     <option value="">- Select -</option>
-                    <option value="Alok A Tripathi">Alok A Tripathi</option>
+                    <option value="Social Evtent">Social Evtent</option>
+                    <option value="Personal Evtent">Personal Evtent</option>
+                    <option value="Professional Evtent">Professional Evtent</option>
+                    <option value="Religions Events">Religions Events</option>
                   </select>
                   {errors.invitationFor && <p className="mt-1 text-sm text-red-600">{errors.invitationFor}</p>}
                 </div>

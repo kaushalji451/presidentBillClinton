@@ -48,7 +48,7 @@ const LineageTree = () => {
 
         const root = d3.hierarchy(rootData, d => d.children);
         const topLevelChildrenCount = root.children ? root.children.length : 0;
-        const xSpacing = topLevelChildrenCount <= 2 ? 80 : 140;
+        const xSpacing = topLevelChildrenCount <= 2 ? 80 : 170;
         const ySpacing = 220;
         const treeLayout = d3.tree().nodeSize([xSpacing, ySpacing]);
 
@@ -69,10 +69,11 @@ const LineageTree = () => {
             .attr("preserveAspectRatio", "xMinYMin meet")
             .style("width", "100%")
             .style("height", `${treeHeight}px`);
-
+        const LEFT_PADDING = 60;
         const svg = svgElement
-            .append("g")
-            .attr("transform", `translate(${treeWidth / 2 - root.x}, 50)`);
+            .append("g")// increase this if needed
+        svg.attr("transform", `translate(${treeWidth / 2 - root.x + LEFT_PADDING}, 50)`);
+
 
         const IMAGE_RADIUS = 35;
 
@@ -87,7 +88,7 @@ const LineageTree = () => {
             .attr("stroke", "#ccc") // lighter stroke for dark background
             .attr("stroke-width", 2)
             .attr("d", d => {
-                const sourceY = d.source.y + 80;
+                const sourceY = d.source.y + 40;
                 return d3.linkVertical()
                     .x(d2 => d2.x)
                     .y(d2 => d2 === d.source ? sourceY : d2.y)(d);
@@ -104,6 +105,7 @@ const LineageTree = () => {
             .attr("stroke-dashoffset", 0);
 
         // NODES
+        // NODES
         const nodes = svg
             .selectAll("g.node")
             .data(allNodes)
@@ -113,60 +115,42 @@ const LineageTree = () => {
             .attr("transform", d => `translate(${d.x}, ${d.y})`)
             .style("opacity", 0);
 
+        // Fade-in animation
         nodes
             .transition()
             .delay((d, i) => i * 100)
             .duration(500)
             .style("opacity", 1);
 
-        nodes.on("click", function (event, d) {
-            if (d.data.children) {
-                d.data._children = d.data.children;
-                d.data.children = null;
-            } else if (d.data._children) {
-                d.data.children = d.data._children;
-                d.data._children = null;
-            }
-            setRootData({ ...rootData });
-        });
-
-        nodes.append("circle")
-            .attr("r", IMAGE_RADIUS)
-            .attr("fill", "#f0f0f0")
-            .attr("stroke", "#aaa");
-
-        nodes.append("image")
-            .attr("href", d => d.data.image)
-            .attr("width", 80)
-            .attr("height", 80)
-            .attr("x", -35)
-            .attr("y", -35)
-            .attr("clip-path", "circle(35px at 35px 35px)");
-
+        // Add text first to measure width
         nodes.append("text")
             .attr("text-anchor", "middle")
-            .attr("fill", "#fff") // white text for dark background
+            .attr("dominant-baseline", "middle") // vertical centering
+            .attr("fill", "#fff")
             .style("font-size", "14px")
             .style("font-weight", "bold")
-            .each(function (d) {
-                const fullName = d.data.name;
-                const match = fullName.match(/^([^(]+)\s*(\([^)]+\))?/);
-                const nameLine = match ? match[1].trim() : fullName;
-                const bracketLine = match && match[2] ? match[2].trim() : null;
+            .text(d => d.data.name.replace(/\bMahant\b/gi, "").trim());
 
-                const text = d3.select(this);
-                text.append("tspan")
-                    .attr("x", 0)
-                    .attr("y", 55)
-                    .text(nameLine);
+        // Add responsive rectangle behind text
+        nodes.each(function (d) {
+            const textElement = d3.select(this).select("text");
+            const textWidth = textElement.node().getBBox().width;
+            const textHeight = textElement.node().getBBox().height;
+            const paddingX = 20;
+            const paddingY = 10;
 
-                if (bracketLine) {
-                    text.append("tspan")
-                        .attr("x", 0)
-                        .attr("dy", "1.2em")
-                        .text(bracketLine);
-                }
-            });
+            // Draw rectangle behind text
+            d3.select(this)
+                .insert("rect", "text") // insert behind text
+                .attr("x", -textWidth / 2 - paddingX / 2)
+                .attr("y", -textHeight / 2 - paddingY / 2)
+                .attr("width", textWidth + paddingX)
+                .attr("height", textHeight + paddingY)
+                .attr("rx", 8)
+                .attr("fill", "#1E3A5F")
+                .attr("stroke", "#4FC3F7")
+                .attr("stroke-width", 2);
+        });
     }, [dimensions, rootData]);
 
     return (
@@ -174,7 +158,7 @@ const LineageTree = () => {
             ref={containerRef}
             style={{
                 overflowX: "hidden",
-                width: "120%",
+                width: "150%",
                 overflowY: "hidden",
                 background: "#091D32", // solid bg as you asked
                 borderRadius: "0.5rem",

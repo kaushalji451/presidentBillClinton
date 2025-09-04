@@ -48,7 +48,7 @@ const LineageTree = () => {
 
         const root = d3.hierarchy(rootData, d => d.children);
         const topLevelChildrenCount = root.children ? root.children.length : 0;
-        const xSpacing = topLevelChildrenCount <= 2 ? 80 : 170;
+        const xSpacing = topLevelChildrenCount <= 2 ? 80 : 190;
         const ySpacing = 220;
         const treeLayout = d3.tree().nodeSize([xSpacing, ySpacing]);
 
@@ -69,7 +69,7 @@ const LineageTree = () => {
             .attr("preserveAspectRatio", "xMinYMin meet")
             .style("width", "100%")
             .style("height", `${treeHeight}px`);
-        const LEFT_PADDING = 60;
+        const LEFT_PADDING = 90;
         const svg = svgElement
             .append("g")// increase this if needed
         svg.attr("transform", `translate(${treeWidth / 2 - root.x + LEFT_PADDING}, 50)`);

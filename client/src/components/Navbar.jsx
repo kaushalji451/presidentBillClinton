@@ -181,7 +181,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               aria-label="Twitter"
             >
-              <FaTwitter className="hover:text-gray-400" />
+              <FaXTwitter className="hover:text-gray-400" />
             </a>
             <a
               href="https://instagram.com"

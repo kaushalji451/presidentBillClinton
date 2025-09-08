@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import searchIndex from "./SearchIndex";
-
+import { useNavigate } from "react-router-dom";
 const SearchBar = () => {
+  let navigate = useNavigate();
   const [query, setQuery] = useState("");
 
   const handleSearch = (e) => {
@@ -12,7 +13,7 @@ const SearchBar = () => {
     );
 
     if (match) {
-      window.location.href = match.url; // redirect to page
+      navigate(match.url); // redirect to page
     } else {
       alert("No results found.");
     }

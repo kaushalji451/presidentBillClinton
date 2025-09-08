@@ -5,6 +5,8 @@ import { FaXTwitter  } from "react-icons/fa6";
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from "framer-motion";
+import SearchBar from './Search/SearchBar';
+import SearchBarmobile from './Search/SearchBarmobile';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,13 +38,7 @@ export default function Navbar() {
           // Normal navbar shown when menu is closed
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-3 sm:px-6 md:px-9 py-2 md:py-3">
             {/* Search Bar - ONLY visible md and above */}
-            <div className="hidden md:flex w-1/4 justify-start mb-2 md:mb-0 order-2 md:order-1">
-              <input
-                type="text"
-                placeholder="Search"
-                className="w-full px-2 py-1 bg-transparent border-b border-white placeholder-white text-white text-sm focus:outline-none"
-              />
-            </div>
+           <SearchBar/>
 
             {/* Site Title & Desktop Nav */}
             <div className="w-full md:w-2/4  flex flex-col max-md:flex-row items-center justify-center order-1 md:order-2">
@@ -145,13 +141,7 @@ export default function Navbar() {
           </div>
 
           {/* Search Bar */}
-          <div className="w-full max-w-xs mb-8 z-20">
-            <input
-              type="text"
-              placeholder="Search"
-              className="w-full bg-transparent border-b border-white placeholder-white text-white text-base py-2 focus:outline-none"
-            />
-          </div>
+        <SearchBarmobile/>
 
           {/* Navigation Links */}
           <nav className="flex flex-col space-y-6 text-lg font-medium text-white items-center mb-10 z-20">

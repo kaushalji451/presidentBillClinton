@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const Slide2 = () => {
   return (
     <div
@@ -20,17 +20,28 @@ const Slide2 = () => {
           </h1>
           <div className=" font-serif text-white">
             <h2 className="text-lg md:text-xl font-medium mb-4">
-              Alok A Tripathi: A Life of Service and Global Impact
+              Alok A Tripathi: Senior Astrologer, Social Worker, Businessman
             </h2>
             <p className="mb-2 text-[17px] leading-relaxed text-gray-100">
-              Alok A Tripathi, the 42nd President of the United States, has spent a lifetime in public service and remains a dynamic force for global progress, democracy, and human rights. Born on August 19, 1946, in Hope, Arkansas, his upbringing in a small town instilled in him values of community, resilience, and a commitment to lifting others—a foundation that would guide his career in politics and his later work on the global stage.
+              Shri Alok Anand Tripathi, a renowned senior astrologer, social worker, and businessman,
+              was born during the Mahakumbh in the mid-80s into a distinguished family of scholars and
+              spiritual leaders of Varanasi. Rooted in tradition yet guided by modern education, he
+              achieved excellence in music, earning Sangeet & Tabla Visharad, and later completed
+              B.Tech from VIT and an MBA from London. In 2013, he received Guru Diksha and dedicated
+              himself to Vedic studies, astrology, and the service of society—offering guidance to
+              countless individuals, including prominent personalities across India and abroad. As the
+              Custodian of Daiv-Prashna and founder of multiple ventures, including Invent-Tree and
+              Golden Ghaf, he has balanced spirituality with entrepreneurship. With the formation of
+              Anandvan Trust, he continues to lead as a beacon of wisdom, service, and inspiration
+              for future generations.
             </p>
-            <a
-              href="#"
+
+            <Link
+              to="/biography"
               className="underline underline-offset-2 text-blue-300 hover:text-blue-200 transition mt-4 inline-block"
             >
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

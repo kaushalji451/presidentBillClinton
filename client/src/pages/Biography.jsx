@@ -33,10 +33,13 @@ const Biography = () => {
           </div>
             <Entry
               year="Mid 80’s — Birth & Family"
-              text={`Born on April 11 during the Mahakumbh in the family of Zamindar Pt Shivbalak Tripathi...
-Great Grandson of Pt Bhavani Shankar Tripathi...
-Grandson of Pt RamaShankar Tripathi (Sahitya Ratna - BHU).
-Son of Anandkumar Tripathi (IIT, MBA).`}
+              text={`Born on April 11 during the Mahakumbh in the family of Zamindar Pt Shivbalak
+Tripathi, father of Pt Raghubar Dayal Tripathi & Pt Vishweshwar Dayal Tripathi, who were also
+official mahants of Shri Kashi Vishwanath Temple Varanasi from the year 1900, owning lands
+across Varanasi measuring over 100 acres. Great Grandson of Pt Bhavani Shankar Tripathi,
+who was business partner and Chief of Bhuvalika group Calcutta owning 9 major coal mines in
+surrounding areas of Calcutta. Grandson of Pt RamaShankar Tripathi (Sahitya Ratna - BHU).
+Son of Anandkumar Tripathi (IIT, MBA). `}
             />
 
             <Entry
@@ -51,17 +54,21 @@ Son of Anandkumar Tripathi (IIT, MBA).`}
 
             <Entry
               year="2013 — Vedic Studies"
-              text="Received Official Guru Diksha from Shri Ramendra Pandey (Founder-Sthapatyam)..."
+              text="Received Official Guru Diksha from Shri Ramendra Pandey (Founder-Sthapatyam). |
+Same year started Vedic studies and Veda path in Ghanna.
+"
             />
 
             <Entry
               year="2013 — Astrology"
-              text="Began Astrological consulting and demonstrated the ability to prepare accurate horoscope..."
+              text="Began Astrological consulting and demonstrated the ability to prepare accurate
+horoscope of any individual just by looking at their face."
             />
 
             <Entry
               year="2013 — Daiv-Prashna"
-              text="Joined Daiv-Prashna and started free astrology consultancy to everyone..."
+              text="Joined Daiv-Prashna and started free astrology consultancy to everyone in India and
+abroad. Began providing astrology consultancy to top personalities in India (ongoing). "
             />
 
             <Entry
@@ -82,9 +89,8 @@ Joined True Elements (Marico then Sanjiv Goenka Group) as HOD - Sales & Marketin
 
             <Entry
               year="2019 — Leadership & Entrepreneurship"
-              text={`Upon passing away of his Guru, appointed Custodian of Daiv-Prashna.
-Co-founded Golden Ghaf Clothing Company on April 15.
-Married Shriya Raghuvanshi in Dec’19.`}
+              text={`Upon passing away of his Guru, appointed Custodian of Daiv-Prashna. Co-founded Golden Ghaf Clothing Company on April 15. Married Shriya Raghuvanshi in Dec’19
+`}
             />
 
             <Entry

@@ -16,7 +16,7 @@ const Biography = () => {
     <section
       className="min-h-screen bg-cover bg-center flex items-stretch justify-start relative"
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(20,28,36,0.3), rgba(20,28,36,0.6)), url('https://images.presidentclinton.com/7b39245c-154b-4e0b-94c3-ffe60a3ea7a0')`,
+        backgroundImage: `linear-gradient(to right, rgba(20,28,36,0.3), rgba(20,28,36,0.6)), url('/assests/biography-bg.jpg')`,
         fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
       }}
     >

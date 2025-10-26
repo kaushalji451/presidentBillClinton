@@ -39,7 +39,7 @@ const Entry = ({ year, text, images }) => {
                 key={i}
                 src={img}
                 alt={`timeline-${i}`}
-                className="w-1/2 sm:w-1/3 md:w-1/2 h-auto max-h-40 rounded-xl object-cover"
+                className="w-1/2 sm:w-1/3 md:w-1/2 h-auto max-h-40 rounded-xl object-center "
               />
             ))}
           </div>

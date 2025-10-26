@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Entry from "../components/BioGraphyEntery";
 
+
 const fadeInVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -101,6 +102,15 @@ Joined True Elements (Marico then Sanjiv Goenka Group) as HOD - Sales & Marketin
             <Entry
               year="~2025 onwards — Social Service"
               text="Formation of Anandvan Trust and appointment as president of the trust."
+            />
+
+            <Entry
+              year="24th October 2025"
+              text="Meeting with Minister O. P. Rajbhar at his residence – 20 Gautam Palli, Lucknow."
+              images={[
+               "/assests/alokji_with_cm.jpeg",
+               "/assests/alokji_with_cm.jpeg"
+              ]}
             />
           </div>
         </motion.div>

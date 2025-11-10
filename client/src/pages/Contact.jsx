@@ -82,7 +82,7 @@ const SchedulingForm = () => {
           body: JSON.stringify(formData),
         });
         data = await data.json();
-        if (data.message ==='data saved successfully') {
+        if (data) {
           setFormData({
             invitationFor: '',
             hostOrganization: '',

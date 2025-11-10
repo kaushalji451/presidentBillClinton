@@ -1,7 +1,7 @@
 import React from 'react';
 
-import heroDesktop from '/assests/hero-desktop1.jpg';
-import heroMobile from '/assests/hero-mobile1.jpg';
+import heroDesktop from '/assests/heroDesktop3.png';
+import heroMobile from '/assests/heroDesktop3.png';
 import homebg from '/assests/homebg.png';
 
 const Slide1 = () => {
@@ -13,20 +13,16 @@ const Slide1 = () => {
       }}
     >
       {/* Responsive images - covers full container */}
-      <picture>
-        {/* Mobile image for <=768px */}
-        <source media="(max-width: 768px)" srcSet={heroMobile} />
-        {/* Desktop fallback */}
-        <img
-          src={heroDesktop}
-          alt="Alok Ji Hero"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{
-            minHeight: '100vh',   // Full viewport height
-            maxHeight: '100vh',   // Prevent overflow
-          }}
-        />
-      </picture>
+       <picture className="flex items-center justify-center h-screen">
+    {/* Mobile image for <=768px */}
+    <source media="(max-width: 768px)" srcSet={heroMobile} />
+    {/* Desktop fallback */}
+    <img
+      src={heroDesktop}
+      alt="Alok Ji Hero"
+      className="h-screen object-contain"
+    />
+  </picture>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
         {/* <div className="text-white text-center px-4">

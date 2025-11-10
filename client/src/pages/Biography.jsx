@@ -44,12 +44,12 @@ across Varanasi measuring over 100 acres. Great Grandson of Pt Bhavani Shankar T
 who was business partner and Chief of Bhuvalika group Calcutta owning 9 major coal mines in
 surrounding areas of Calcutta. Grandson of Pt RamaShankar Tripathi (Sahitya Ratna - BHU).
 Son of Anandkumar Tripathi (IIT, MBA). `}
-              images={[
-                "https://picsum.photos/200/300?1",
-                "https://picsum.photos/200/300?2",
-                "https://picsum.photos/200/300?3",
-                "https://picsum.photos/200/300?4",
-              ]}
+              // images={[
+              //   "https://picsum.photos/200/300?1",
+              //   "https://picsum.photos/200/300?2",
+              //   "https://picsum.photos/200/300?3",
+              //   "https://picsum.photos/200/300?4",
+              // ]}
             />
 
             {/* Other Entries → Default (2 images) */}

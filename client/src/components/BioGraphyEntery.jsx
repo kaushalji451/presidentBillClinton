@@ -22,26 +22,26 @@ const Entry = ({ year, text, images }) => {
         {imgArray.length === 4 ? (
           // 4 images → 2x2 grid
           <div className="grid ps-4 grid-cols-2 gap-4 w-full max-w-md">
-            {imgArray.map((img, i) => (
+            {/* {imgArray.map((img, i) => (
               <img
                 key={i}
                 src={img}
                 alt={`timeline-${i}`}
                 className="w-full h-auto max-h-40 rounded-xl object-cover"
               />
-            ))}
+            ))} */}
           </div>
         ) : (
           // 2 images → flex row
           <div className="flex gap-4 ps-4 justify-center md:justify-end w-full max-w-md">
-            {imgArray.map((img, i) => (
+            {/* {imgArray.map((img, i) => (
               <img
                 key={i}
                 src={img}
                 alt={`timeline-${i}`}
                 className="w-1/2 sm:w-1/3 md:w-1/2 h-auto max-h-40 rounded-xl object-center "
               />
-            ))}
+            ))} */}
           </div>
         )}
       </div>

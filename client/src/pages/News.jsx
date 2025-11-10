@@ -28,8 +28,8 @@ export default function News() {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-
       const data = await response.json();
+      console.log("this is data",data);
       setNewsData(data);
     } catch (err) {
       setError(err.message || "Failed to fetch news");

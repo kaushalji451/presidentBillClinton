@@ -5,7 +5,7 @@ const Slide2 = () => {
     <div
       className="min-h-screen w-full  flex justify-center bg-cover bg-center relative"
       style={{
-        backgroundImage: `url(https://images.presidentclinton.com/4ad8d2fb-29a8-425c-8eaa-519af6d4dd75)`,
+        backgroundImage: `url(https://res.cloudinary.com/dpbpu5b0v/image/upload/v1762778927/IMG_9382_2_1_rgzpnw.jpg)`,
         fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
       }}
     >

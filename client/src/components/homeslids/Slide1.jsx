@@ -1,7 +1,7 @@
 import React from 'react';
 
-import heroDesktop from '/assests/hero-desktop.jpg';
-import heroMobile from '/assests/hero-mobile.jpg';
+import heroDesktop from '/assests/hero-desktop1.jpg';
+import heroMobile from '/assests/hero-mobile1.jpg';
 import homebg from '/assests/homebg.png';
 
 const Slide1 = () => {
@@ -29,14 +29,14 @@ const Slide1 = () => {
       </picture>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-        <div className="text-white text-center px-4">
+        {/* <div className="text-white text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
             Welcome to Alok Ji’s Official Website
           </h1>
           <p className="text-lg md:text-xl">
             Explore his journey, legacy, and vision for India
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ export default function Navbar() {
                 to="/"
                 className="text-2xl sm:text-3xl max-md:text-center max-md:w-full font-light leading-tight tracking-wide uppercase block mb-1 md:mb-0"
               >
-                President Alok Ji
+                PT Alok Tripath
               </Link>
               {/* Desktop Nav */}
               <nav className="hidden md:flex justify-center gap-8 lg:gap-12 text-md mt-2">

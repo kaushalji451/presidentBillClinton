@@ -12,14 +12,23 @@ Newsrouter.get('/', async (req, res) => {
   }
 });
 
+// POST route to add a single news item
 Newsrouter.post('/', async (req, res) => {
   try {
-    const data = await News.insertMany(newsData);
-    console.log("data.saves");
+    const newsData = req.body;
+
+    // Create and save new news item
+    const newNews = new News(newsData);
+    await newNews.save();
+
+    console.log(" News saved:", newNews);
+    res.status(201).json({ message: 'News added successfully', data: newNews });
+
   } catch (error) {
-    console.log("some error", error);
+    console.error(" Error saving news:", error);
+    res.status(500).json({ message: 'Error saving news', error });
   }
-})
+});
 
 module.exports = Newsrouter;
 

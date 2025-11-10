@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Layout from './components/Layout';
 import Founder from "./pages/Founder"
+import AddNews from './pages/AddNews';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Route path="/news" element={<Layout><News /></Layout>} />
       <Route path="/contact" element={<Layout><Contact /></Layout>} />
       <Route path="/founder" element={<Layout><Founder /></Layout>} />
+      <Route path="/addnews" element={<Layout><AddNews /></Layout>} />
       <Route path="*" element={<Layout><NotFound /></Layout>} />
     </Routes>
   );

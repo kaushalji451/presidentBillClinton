@@ -10,7 +10,7 @@ const ContactSchema = new Schema({
         type: String,
         required: true,
     },
-    hostWebsite: {
+    hostWebsite: {  
         type: String,
         required: true,
     },

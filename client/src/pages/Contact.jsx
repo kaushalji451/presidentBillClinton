@@ -72,7 +72,7 @@ const SchedulingForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-
+      console.log(formData);
       try {
         let data = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
           method: "POST",

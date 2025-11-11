@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"
 
+import heroMobile from '/assests/heroDesktop3.png';
 const backgroundImage =
   "https://images.presidentclinton.com/15c27fae-efc8-4e67-91f8-60f845a7b3b4";
 
-const fadeInVariants = {
+const fadeInVariants = {   
   hidden: { opacity: 0, y: 36 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
@@ -69,7 +70,7 @@ export default function News() {
     <section
       className="min-h-screen flex flex-col bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(20,28,36,0.85),rgba(20,28,36,0.96)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(rgba(20,28,36,0.85),rgba(20,28,36,0.96)), url(${heroMobile})`,
         fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
       }}
     >

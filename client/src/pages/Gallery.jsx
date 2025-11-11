@@ -2,9 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import galleryData from "../components/galleryData";
 import { useEffect } from "react";
+import heroMobile from '/assests/heroDesktop3.png';
 const backgroundImage =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOpFdymNNK6S-MUpKazc72I9J3ixMT6zxeg&s";
-
+   
 const fadeInVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -34,7 +35,7 @@ export default function Gallery() {
     <section
       className="min-h-screen flex flex-col  bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(18,22,34,0.90),rgba(20,28,36,0.96)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(rgba(18,22,34,0.90),rgba(20,28,36,0.96)), url(${heroMobile})`,
         fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
       }}
     >

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
+import Bannder from '/assests/Banner-Alok-Anand.png'
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 36 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
+};   
+
 
 // We'll use only the first image as the background:
 const bgImage = "https://images.presidentclinton.com/a86db80a-3984-4966-b29e-9f9c8fe3b722";
@@ -61,9 +63,9 @@ const Slide3 = () => {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative  flex items-center justify-center bg-no-repeat bg-contain bg-center"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${Bannder})`,
         fontFamily: "'EB Garamond', ui-serif, Georgia, serif",
       }}
     >
@@ -71,7 +73,7 @@ const Slide3 = () => {
       <div className="absolute inset-0 bg-[#091D32]/80  z-0" />
 
       {/* Foreground content container */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-2 md:px-4 py-12 md:py-20">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-2 md:px-4  md:py-20">
         {/* Section Title */}
         <div>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
